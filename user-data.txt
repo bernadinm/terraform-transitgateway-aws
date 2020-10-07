@@ -1,0 +1,9 @@
+#!/bin/bash
+
+mkdir -p /home/ubuntu/.ssh
+cat <<FILE > /home/ubuntu/.ssh/authorized_keys
+ssh-rsa AAAAB3Nza+l8f3wVTIENqA9Jyyjst9Lqs40dI/Eu1969wK8yWnrn3SpkOPxqtlcK5QdGB4O89AxtSAiKbpuoMa7lEUfW1Qc9InOGQ/qgAo7DG6wALcnTvAKy4bV6og8XfzCfkS6Jgiw/Fw4VJI09+vqCu8z60+6FwHSmVFdGBwOZ+iyQKnkCK4CvfrkPSkk/km208w== cardno:00123456
+FILE
+
+chown ubuntu.ubuntu /home/ubuntu/.ssh/authorized_keys
+chmod 400 /home/ubuntu/.ssh/authorized_keys
