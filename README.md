@@ -14,6 +14,8 @@ In the tgw.tf file, edit your variable `admin_access_ip` to your own.
 
 In order for you to ssh, you need your keys to be sent and installed on your machines. Add your ssh pub key in the user-data.txt file.
 
+The default operating system is ubuntu. To ssh, the example command is `ssh ubuntu@<public-ip>`
+
 ### Deploy TGW
 
 Simply run:
